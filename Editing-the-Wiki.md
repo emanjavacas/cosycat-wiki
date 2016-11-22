@@ -1,5 +1,3 @@
-# Editing the Wiki
-
 We use a pull-request/merge approach for Wiki editing.
 This means that we will assume some basic working knowdlege of
 [git](https://git-scm.com) and [GitHub](https://guides.github.com/activities/hello-world/).
