@@ -1,6 +1,7 @@
 We use a pull-request/merge approach for Wiki editing.
 This means that we will assume some basic working knowdlege of
-[git](https://git-scm.com) and [GitHub](https://guides.github.com/activities/hello-world/).
+[git](https://git-scm.com) and
+[GitHub](https://guides.github.com/activities/hello-world/).
 
 ## Setup
 
@@ -15,6 +16,13 @@ personal copy of someone else's repository stored remotely at GitHub.
 - Click on the fork button on the upper-right.
 
 ### Edit your repository fork
+Do the changes you wish to be added.
+Bear in mind that GitHub wikis use markdown syntax for styling.
+Here is a [cheatsheet](https://guides.github.com/features/mastering-markdown/)
+for GitHub's own Markdown flavour.
+> Tip. If you edit your fork online, you can use GitHub's online editor
+> and quickly preview the rendered document you are editing.
 
 ### Issue a pull-request to your fork upstream (e.g. main repository)
-
+See [here](https://guides.github.com/activities/hello-world/#pr) for short
+instructions on how to open a pull request.
