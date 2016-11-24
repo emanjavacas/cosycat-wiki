@@ -1,6 +1,6 @@
 **Intro**
-* [[Why Cosycat?]]
-* [[What can you do with Cosycat?]]
+* [[Why Cosycat]]
+* [[What can you do with Cosycat]]
 
 **Web-app**
 * [[General workflow]]
