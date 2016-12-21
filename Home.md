@@ -1,6 +1,6 @@
 # **Welcome to the Cosycat wiki!**
 
-**Cosycat** is an browser-based application allowing users to query a corpus database using a regex-based query syntax, filter results for a variety of variables, view the results of said query in a query pane, and subsequently annotate results intuitively in a separate annotation pane, saving annotations to the database tied to the hit for later retrieval. It also allows for collaborative working within teams and supervision of work from project leaders; multiple users can operate on the same projects with various levels of access and alteration to be set by the project’s creator.
+**Cosycat** is an web-based application allowing users to query a corpus database using a regex-based query syntax, filter results for a variety of variables, view the results of said query in a query pane, and subsequently annotate results intuitively in a separate annotation pane, saving annotations to the database tied to the hit for later retrieval. It also allows for collaborative working within teams and supervision of work from project leaders; multiple users can operate on the same projects with various levels of access and alteration to be set by the project’s creator. Cosycat is designed with an emphasis on modularity and reusability.
 
 # **About the creators: Mind-Bending Grammars**
 
