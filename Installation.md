@@ -20,7 +20,7 @@ and you should be done.
 
 Before you can run the app executable you need to make sure the following external dependencies are installed and running on your system.
 
-1. MongoDb
+1. MongoDB
 
     Perhaps the most important dependency is the MongoDB database. The official online documentation has a nice section on how to           install MongoDB in different OSs. Once you have a working installation of MongoDB, make sure it is running before deploying Cosycat.     Most conveniently, you can run the MongoDB process in the background as a daemon (see Start mongod as a Daemon for instructions).       The mongod process will listen on specific TCP port, which defaults to 27017 but can be changed to any other value using the --port     optional argument.
 
