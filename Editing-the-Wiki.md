@@ -8,7 +8,7 @@ This means that we will assume some basic working knowdlege of
 ### Fork the wiki repository
 You will need to fork the wiki repository before before you can start editing.
 If you don't know what forking means in GitHub lingo, you can read
-[this]() or you can just trust me when I say that a "forked" repository is your
+[this](https://help.github.com/articles/fork-a-repo/) or you can just trust me when I say that a "forked" repository is your
 personal copy of someone else's repository stored remotely at GitHub.
 
 - Login with your GitHub account.
@@ -16,6 +16,11 @@ personal copy of someone else's repository stored remotely at GitHub.
 - Click on the fork button on the upper-right.
 
 ### Edit your repository fork
+> Before you start editing it is a good idea to "pull" the changes eventually made in the original repository to your local copy, so as to avoid future conflicts when you try to "push" your edits back to the original repository. For this, you need to let git know what is the original repository and then pull.
+>```
+>    git remote add wiki https://github.com/emanjavacas/cosycat-wiki.git
+>    git pull wiki master
+>```
 Do the changes you wish to be added.
 Bear in mind that GitHub wikis use markdown syntax for styling.
 Here is a [cheatsheet](https://guides.github.com/features/mastering-markdown/)
