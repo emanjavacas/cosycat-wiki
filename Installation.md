@@ -32,9 +32,15 @@ Before you can run the app executable you need to make sure the following extern
 
 ## **Configuration**
 
-In order to run Cosycat you need to point it to the corpora you want to make available and to the the database connection (in case you are running MongoDB on a non-default port). Additionally, there are other optional variables that can be set or customize. All configuration should go into a file in edn format such as the following (documentation for each variable is shown in place as comments).
+In order to run Cosycat you need to point it to the corpora you want to make available
+and to the the database connection (in case you are running MongoDB on a non-default port).
+Additionally, there are other optional variables that can be set or customize.
+All configuration should go into a file in [edn format](https://en.wikipedia.org/wiki/Extensible_Data_Notation)
+such as the following
+(documentation for each variable is shown in place as comments).
 
-```{:dynamic-resource-path "app-resources/"            ;where to store dynamic resources (logs, etc...)
+```clojure
+{:dynamic-resource-path "app-resources/"            ;where to store dynamic resources (logs, etc...)
  :avatar-path "img/avatars/"                        ;where to store generated avatars
  :tagset-paths ["/dir/with/tagsets" "another/path"] ;paths with tagset json files
  :database-url "mongodb://127.0.0.1:27017/cosycat"  ;mongodb URL (do not change unless you run mongod on a different port)
@@ -44,60 +50,92 @@ In order to run Cosycat you need to point it to the corpora you want to make ava
  :corpora [... see below ...]}
 ```
 
-### **Corpus configuration**
+#### Corpus configuration
 
 There are several formats for specifying corpora.
-
-1. Corpora full format: Specifies corpus, endpoint type and the corpus options needed by that type.
-
-```
+    
+- Corpora full format. Specifies corpus, endpoint type and the corpus options needed by that type.
+       
+```clojure
 [{:corpus "brown-tei"
   :type :blacklab-server
   :args {:server "my-server.com:8080"
   :web-service "blacklab-server-1.4-SNAPSHOT"}}]
 ```
-
-2. Corpora short format. Require all corpora available at a given URL (composed of http://server/webservice).
-```
+    
+- Corpora short format. Require all corpora available at a given URL (composed of <http://server/webservice>).
+       
+```clojure
 [{:type :blacklab-server
   :server "my-server.com:8080"
   :web-service "blacklab-server-1.4-SNAPSHOT"}]
 ```
-
-3. Include only specific corpora from a given domain (TODO)
-```
+	
+- Include only specific corpora from a given domain (TODO)
+        
+```clojure
 [{:type :blacklab-server
   :server "my-server.com:8080"
   :web-service "blacklab-server-1.4-SNAPSHOT"
   :args {:corpora ["brown-tei"]}}]
 ```
 
+#### Tagsets
+
+When doing annotations, it is common to predefine a set of annotation keys and values that
+have to be used for a given research question. For instance, if you want to annotate parts
+of speech (POS), you want to make sure the research team follows the same standard, such as
+the Penn Treebank tagset, or similar.
+
+Furthermore, knowing the tagset allows the application to provide you with autocomplete
+functionalities - as shown in the picture below -, which can save your team a lot of typing time.
+
+<p align="center"><img src="https://github.com/emanjavacas/cosycat/raw/master/doc/img/autocomplete.png" width="450px"></p>
+		
+Cosycat allows you to input different tagsets using a simple tagset format.
+See the following
+[JSON file](https://github.com/emanjavacas/cosycat/tree/master/resources/public/tagsets/pennTreebank.json)
+for an example.
+You can specify as many JSON tagset files as you want.
+In order for Cosycat to use the tagsets, you only need to add directories with
+tagsets to your config file (see above).
+
 ## **Running the app**
 
-Once you have resolved the dependencies and created your configuration file you only need to grab the application from the release page.
+Once you have resolved the dependencies and created your configuration file you only need to grab
+the application from the release page.
 
-Additionally you can choose to build the executable yourself. If you want to build the jar file yourself, you will need the handy Clojure project manager Leiningen (see link for further installation instructions). Once you have installed leiningen you need to fetch the sourcecode from [this repository](https://www.github.com/emanjavacas/cosycat.git):
 
-Go to the project root directory:
-
-```cd cosycat```
-
-and call the uberjar action:
-
-```lein uberjar```
-
-This last command will download all dependencies and build the executable jar into cosycat/target/cosycat-VERSION-standalone.jar, which you can use to run the app.
+> Aditionally you can choose to **build the executable** yourself.
+> If you want to build the jar file yourself, you will need the handy Clojure project manager
+> [Leiningen](http://leiningen.org/) (see link for further installation instructions).
+> Once you have installed leiningen you need to fetch the sourcecode from this repository:
+    
+> ```sh
+> git clone https://www.github.com/emanjavacas/cosycat.git
+> ```
+    
+> Go to the project root directory:
+    
+> ```sh
+> cd cosycat
+> ```
+    
+> and call the `uberjar` action:
+    
+> ```bash
+> lein uberjar
+> ```
+    
+> This last command will download all dependencies and build the executable jar into
+> `cosycat/target/cosycat-VERSION-standalone.jar`, which you can use to run the app.
 
 In order to start the application, you only need the following command.
 
-```java -Dconfig="path/to/config.edn" -jar cleebo-VERSION.jar start```
+```sh
+java -Dconfig="path/to/config.edn" -jar cleebo-VERSION.jar start
+```
 
-Afterwards you should be able to navigate through your browser to your server's URL plus the port specified in the config.edn file (or localhost:PORT if you are running the application locally) and see Cosycat's landing page.
-
-### **Tagsets**
-
-When doing annotations, it is common to predefine a set of annotation keys and values that have to be used for a given research question. For instance, if you want to annotate parts of speech (POS), you want to make sure the research team follows the same standard, such as the Penn Treebank tagset, or similar.
-
-Furthermore, knowing the tagset allows the application to provide you with autocomplete functionalities - as shown in the picture below -, which can save your team a lot of typing time.
-
-Cosycat allows you to input different tagsets using a simple tagset format. See the following JSON file for an example. You can specify as many JSON tagset files as you want. In order for Cosycat to use the tagsets, you only need to add directories with tagsets to your config file (see above).
+Afterwards you should be able to navigate through your browser to your server's URL plus
+the port specified in the `config.edn` file (or `localhost:PORT` if you are running the 
+application locally) and see Cosycat's landing page.
