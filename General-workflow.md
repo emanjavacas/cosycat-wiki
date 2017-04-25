@@ -48,7 +48,7 @@ Multiple sort criteria can be applied to the same query through the use of the *
 
 2. **Pagination:** These options allow a user to move through the pages of results backward, foward and by specifying a page number.
 
-3. **Filters:** The filter option controls the filter options applied to the query, constraining its retrieval from the corpus to a set of data. The options here use sets based on the XML data in the corpus and include the following potential constraints:
+3. **Filters:** The filter option controls the filters applied to the query, constraining its retrieval from the corpus to a set of data. Filters are actually automatically created based on the indexed structural attributes of the corpus (so, different corpora will have different filters). Below are example filters used by MBG in the EMMA corpus:
   * **Genre**
   * **textForm**
   * **Date**
