@@ -78,7 +78,7 @@ Once you have resolved the dependencies and created your configuration file you 
 
 Additionally you can choose to build the executable yourself. If you want to build the jar file yourself, you will need the handy Clojure project manager Leiningen (see link for further installation instructions). Once you have installed leiningen you need to fetch the sourcecode from this repository:
 
-[Git Clone] (https://www.github.com/emanjavacas/cosycat.git)
+[Git Clone](https://www.github.com/emanjavacas/cosycat.git)
 
 Go to the project root directory:
 
