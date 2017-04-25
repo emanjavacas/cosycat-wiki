@@ -10,7 +10,6 @@
 
 **Deployment**
 * [[Installation]]
-* [[Administration]]
 
 **Collaborating**
 * [[Editing the Wiki]]
