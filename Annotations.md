@@ -16,7 +16,5 @@
   
   * Spans (multiple items in a hit) can also be annotated by selecting the annotation entry box and clicking and dragging across the span you’d like to annotate with one [key]=[value] combination (picture). This selection is persistent and remains after the annotation has been entered and can be deselected, with the entry pane returning to separating between single items, by double clicking the entry interface.
   
-  * *Annotating across hits (Can we do this yet?)*
-  
   * Vital to this process is the establishment or use of a firm set of standards, to allow for easy analysis and promote collaboration and supervision in the examination of annotated hits. Below is the key:value list for MBG's case studies, based on a combination of standards, including those of the Penn Treebank, as well as our own annotation concepts, specifically designed to be useful in our individual case studies and framework. *(add key:value key)*
   
