@@ -82,7 +82,7 @@ The annotation pane is the second window of Cosycat's primary research functions
 
 Here there are 5 basic functions:
 
-1. **Open:** Opens all the hits on the page, allowing their annotation interfaces to be accessed. (For details of annotation procedures, see the Annotation page). Hits can also be opened individually by clicking on the text line.
+1. **Open:** Opens all selected hits, allowing their annotation interfaces to be accessed. (For details of annotation procedures, see the Annotation page). Hits can also be opened individually by clicking on the text line.
 
 2. **Close:** Closes the open hits on the page.
 
@@ -90,4 +90,4 @@ Here there are 5 basic functions:
 
 4. **Pagination:** Scrolls through the pages of hits with an option for 'next', 'previous', 'first' and 'last' along with a page number readout.
 
-5. **Pane Swap:** The pane swap button returns the user to the query pane.
+5. **Pane Swap:** The pane swap button returns the user to the query pane. Alternatively, you can use ALT+S.
