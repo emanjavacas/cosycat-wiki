@@ -1,6 +1,6 @@
 # **General Workflow**
 
-Cosycat is designed for easy use by students and researchers of various abilities and is versatile enought to be useful to a variety of kinds of research. The general pattern of work involves retrieving a set of data via regex query, filtering or sorting it for annotation, annotating the data and then conducting analysis upon the annotated set.
+Cosycat is designed for easy use by students and researchers of various abilities and is versatile enough to be useful to a variety of kinds of research. The general pattern of work involves retrieving a set of data via regex query, filtering or sorting it for annotation, annotating the data and then conducting analysis upon the annotated set.
 
 ## **Query**
 
@@ -73,7 +73,7 @@ Can be undone with the associated eraser button.
 
 5. **Prop:** (Add description text)
 
-6. **Mark hits:** This button marks all the hits in the results currently viewed, selecting them to be carried over to the Annotation Pane. Can be undone with the associated eraser button.
+6. **Mark hits:** This button marks all the hits in the results currently viewed, selecting them to be carried over to the Annotation Pane. Can be undone with the associated eraser button. If you're annotating a saved query, only the hits that are marked as 'kept' will be selected.
 
 ## **Annotation Pane**
 The annotation pane is the second window of Cosycat's primary research functions. It carries marked hits from the Query Pane to the annotation interface seen below.
