@@ -23,15 +23,15 @@
 
   ### **Users**
   
-  *	Users can be added to a project from this page using the corresponding ‘Add User’ button. This prompts the user to search for a username or email (etc) to add to the project. An autocomplete/dropdown function is operational in this window allowing for the easy searching of users on the application.
+  *	Users can be added to a project from this page using the corresponding ‘Add User’ button. This prompts the user to search for a username or email (etc) to add to the project. An autocomplete/dropdown function is operational in this window allowing for the easy searching of users on the application. (Make sure to put your cursor in the name field after the selection and press Enter. Only then can you confirm your choice by clicking the tick icon that appears to the right of the access level.)
   
   *	Once selected the user’s profile is displayed showing their username, name, email address, and join/last active dates. It also allows the project creator to select the access level of this new user. To do this, scroll through the options (guest, user, and project-lead) select the username in the text box below, press enter/return and approve the user access level once the appropriate selection has been made.
   
   * The user will then appear on the homepage with their information visible alongside that of the other users in the project. The creator can edit their role within the project from this screen by using the edit button on the right of the role and following the user access selection procedure detailed previously.
   
   * The user access roles vary in the levels to which they can influence the project in the following ways: 
-  1.Guests can read annotations and suggest changes but nothing more; 
-  2.Users can read annotations, suggest changes, insert annotations and edit their own annotations; 
+  1. Guests can read annotations and suggest changes but nothing more; 
+  2. Users can read annotations, suggest changes, insert annotations and edit their own annotations; 
   3. Project-lead is in charge of the global research goals and is able to edit everyone’s annotations. 
   4. The Project Creator access level cannot be assigned to new users and is, logically, only assigned to the creator themselves. Project Creators have unlimited access within their projects.
   
