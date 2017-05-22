@@ -4,7 +4,7 @@ Cosycat is a browser-based application allowing users to query a corpus database
 
 ## **Annotation**
 
-Annotation in Cosycat utilises inline marking of items in the hits of a query, facilitating use of context, marking of a variety information types through different key: value combinations, and marking both spans and individual items. The annotations are viewed within the same pane on any particular hit encouraging comparative review and analysis. These annotations are also stored within the corpus database itself (?) which allows for various statistical or diagnostic (queries? Scripts? ?) to be conducted on the data after annotation and to assist in analysis of large-scale datasets.
+Annotation in Cosycat utilises inline marking of items in the hits of a query, facilitating use of context, marking of a variety information types through different key : value combinations, and marking both spans and individual items. The annotations are viewed within the same pane on any particular hit encouraging comparative review and analysis. These annotations are stored in a NoSQL database (MongoDB), which can be queried to do various statistical analysis after annotation (RoboMongo and Studio3T provide GUIs).
 
 ## **Projects and Collaboration**
 
