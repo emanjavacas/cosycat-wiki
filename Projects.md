@@ -74,6 +74,8 @@
   
   * In the first tab users in the project are exhibiting as described above.
   
+  ![Project Users Tab](https://github.com/WillStanding/cosycat-wiki/blob/master/Project%20Users%20Tab.png?raw=true "Users Tab")
+  
   * The second tab shows an events history of the project, detailing when, where and by whom certain changes are made in the projects , such as new users being added or queries being saved.
   
   ![Project Events Tab](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Project%20Events%20Tab.png?raw=true "Events Tab")
