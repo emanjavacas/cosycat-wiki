@@ -6,7 +6,7 @@
 
  ## **Annotation Process**
  
- * Annotations are conducted in the annotation pane on hits marked in the query pane. The pane is then accessed through the query interface with the pane switch button.
+ * Annotations are conducted in the annotation pane on hits marked in the query pane. The pane is then accessed through the query interface with the pane switch button or by typing ALT+S.
  
  * By opening the hit (either through clicking it or by opening all hits on the page with the open page button) a user can highlight the element to be annotated and, using the syntax [key]=[value] and pressing enter/return, attach an annotation to it to be saved to it. These annotations are displayed below the hit with separate keys on separate lines. Annotations cannot overlap on the same key line but can apply to the same item across keys. 
  

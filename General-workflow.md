@@ -1,6 +1,6 @@
 # **General Workflow**
 
-Cosycat is designed for easy use by students and researchers of various abilities and is versatile enought to be useful to a variety of kinds of research. The general pattern of work involves retrieving a set of data via regex query, filtering or sorting it for annotation, annotating the data and then conducting analysis upon the annotated set.
+Cosycat is designed for easy use by students and researchers of various abilities and is versatile enough to be useful to a variety of kinds of research. The general pattern of work involves retrieving a set of data via regex query, filtering or sorting it for annotation, annotating the data and then conducting analysis upon the annotated set.
 
 ## **Query**
 
@@ -20,7 +20,7 @@ Queries are entered in the search box of the query pane.
 
 The query pane is the main window of Cosycat's research functions, allowing users to query the corpus, view retrieved hits in a paginated format, sort results, annotate queries, apply filters and change view settings. 
 
-* *(Insert image here)
+![Query Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Query%20Pane.png?raw=true) 
 
 The query pane UI can be seen above: the interface is fairly straightforward with 5 primary elements as well as the menu bar. 
 
@@ -35,8 +35,7 @@ The query pane UI can be seen above: the interface is fairly straightforward wit
 5. **Annotation/pencil icon:** This icon allows a query to be annotated and saved for later use.
 
 Once a search is conducted more options are revealed:
-
-* *(insert image here)*
+![Query Search Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Query%20Pane%20with%20search.png?raw=true "Query Pane 2")
 
 Here we see 6 further options, elucidated below:
 
@@ -73,16 +72,16 @@ Can be undone with the associated eraser button.
 
 5. **Prop:** (Add description text)
 
-6. **Mark hits:** This button marks all the hits in the results currently viewed, selecting them to be carried over to the Annotation Pane. Can be undone with the associated eraser button.
+6. **Mark hits:** This button marks all the hits in the results currently viewed, selecting them to be carried over to the Annotation Pane. Can be undone with the associated eraser button. If you're annotating a saved query, only the hits that are marked as 'kept' will be selected.
 
 ## **Annotation Pane**
 The annotation pane is the second window of Cosycat's primary research functions. It carries marked hits from the Query Pane to the annotation interface seen below.
 
-* *(Insert image here)
+![Annotation Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Annotation%20Pane.png?raw=true "Annotation Pane 1")
 
 Here there are 5 basic functions:
 
-1. **Open:** Opens all the hits on the page, allowing their annotation interfaces to be accessed. (For details of annotation procedures, see the Annotation page). Hits can also be opened individually by clicking on the text line.
+1. **Open:** Opens all selected hits, allowing their annotation interfaces to be accessed. (For details of annotation procedures, see the Annotation page). Hits can also be opened individually by clicking on the text line.
 
 2. **Close:** Closes the open hits on the page.
 
@@ -90,4 +89,4 @@ Here there are 5 basic functions:
 
 4. **Pagination:** Scrolls through the pages of hits with an option for 'next', 'previous', 'first' and 'last' along with a page number readout.
 
-5. **Pane Swap:** The pane swap button returns the user to the query pane.
+5. **Pane Swap:** The pane swap button returns the user to the query pane. Alternatively, you can use ALT+S.
