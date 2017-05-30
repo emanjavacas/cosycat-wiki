@@ -1,0 +1,62 @@
+# **Review Functions**
+Along with the tools for retrieval and annotation of corpus data, Cosycat includes the tools for review and early analysis of annotations
+entered by the user. This allows all members of the project to review and assess any given set of annotations in a searchable format in 
+order to determine their relevancy, examine their distribution and raise issues for correction or discussion.
+
+## **Review Frame**
+The Review Frame is the primary interface for the retrieval and analysis of annotations, with a variety of tools to achieve this. This
+interface is accessed through the menu bar and exhibits a similar UI to the query pane, with 9 primary elements to contrain search results.
+
+1. **AnnKey Searchbox:** This and the corresponding AnnValue Searchbox are the primary method of retrieving annotation data from the database.
+By entering the text of any key entered into the data elsewhere in Cosycat these corresponding data are retrieved in the Review Frame.
+Checking the corresponding tickbox uses the text entered as a regex, searching annotations in the database for matching results in the same 
+manner as regex searches in the query functions. This function can be used alone or along with the AnnValue Searchbox.
+
+2. **AnnValue Searchbox:** This and the corresponding AnnKey Searchbox are the primary method of retrieving annotation data from the database.
+By entering the text of any value entered into the data elsewhere in Cosycat these corresponding data are retrieved in the Review Frame.
+Checking the corresponding tickbox uses the text entered as a regex, searching annotations in the database for matching results in the same 
+manner as regex searches in the query functions. This function can be used alone or along with the AnnKey Searchbox.
+
+3. **Context:** 
+
+4. **Size:** This dropdown, as in the query pane, controls the number of hits per page. 
+
+5. **Window:** This dropdown, as in the query pane, controls the number of items around a hit in context.
+
+6. **TimeRange:** This dropdown opens a calendar pane, allowing the user to select a time span in which the annotations retrieved were made.
+The data retrieved will only show annotation made between these dates, allowing for specified review of a set of annotations. This can be 
+cleared through the use of the associated eraser button.
+
+7. **Users:** This dropdown opens a set of tickboxes corresponding to users' accounts in Cosycat. Marking one or more of these tickboxes
+constrains the results of a query to those annotations made by the marked users. This can be  cleared through the use of the associated 
+eraser button.
+
+8. **Corpora:** This dropdown opens a set of tickboxes corresponding to separate corpora in the database. Marking one or more of these tickboxes
+constrains the results of a query to those annotations made within a particular corpus. This can be cleared through the use of the associa
+
+9. **Search:** This button searches the database for the criteria specified through the use of the other functions in the review pane. The results
+are then displayed below in the 'Review Results Pane'. These results can be cleared through the use of the corresponding eraser button.
+
+## **Review Results Pane**
+
+Once the query criteria are entered, the results appear below the searchbar in a similar configuration to the Annotation Pane elsewhere in 
+Cosycat. They are listed focusing on the queried annotation with the specified amount of context surrounding it. All annotations on the hit
+are displayed, the queried annotation highlighted in orange. The interface here is identical to that in the annotation pane; the primary functions
+are repeated here for clarity.
+ 
+1. **Pagination:** The arrows and list of numbers above the results allow the navigation between pages of results.
+
+2. **Context Bar:** Above the annotations for each hit, the text data is shown in context. The hit and its table of annotations can hidden by clicking
+this bar, leaving only the text data.
+
+3. **Annotation Markers:** Exhibited in the table of annotations beneath each hit are the annotations associated with the text data. By clicking on them,
+users can open the annotation, in the form of a pop-up pane, and view the author and timestamp of the annotation as well as edit it by clicking
+its value text.
+
+4. **Context Arrows:** The context arrows allow for the expansion of the hit context on either side of the focus of the query. Clicking
+The right-facing arrow will expand the context, one token at a time to the right of the hit token, and the left-facing arrow
+will expand it to the right.
+
+Through querying annotations and reviewing them in this pane they can be edited and fine-grain qualitative analysis of individual annotations. 
+As well as this, focusing on time period or particular users allows for oversight both of one's own work as well as by project leaders and 
+supervisors.
