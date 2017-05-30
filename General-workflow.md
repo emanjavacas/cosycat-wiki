@@ -20,7 +20,7 @@ Queries are entered in the search box of the query pane.
 
 The query pane is the main window of Cosycat's research functions, allowing users to query the corpus, view retrieved hits in a paginated format, sort results, annotate queries, apply filters and change view settings. 
 
-* *(Insert image here)
+![Query Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Query%20Pane.png?raw=true) 
 
 The query pane UI can be seen above: the interface is fairly straightforward with 5 primary elements as well as the menu bar. 
 
@@ -35,8 +35,7 @@ The query pane UI can be seen above: the interface is fairly straightforward wit
 5. **Annotation/pencil icon:** This icon allows a query to be annotated and saved for later use.
 
 Once a search is conducted more options are revealed:
-
-* *(insert image here)*
+![Query Search Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Query%20Pane%20with%20search.png?raw=true "Query Pane 2")
 
 Here we see 6 further options, elucidated below:
 
@@ -78,7 +77,7 @@ Can be undone with the associated eraser button.
 ## **Annotation Pane**
 The annotation pane is the second window of Cosycat's primary research functions. It carries marked hits from the Query Pane to the annotation interface seen below.
 
-* *(Insert image here)
+![Annotation Pane](https://github.com/WillStanding/cosycat-wiki/blob/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Annotation%20Pane.png?raw=true "Annotation Pane 1")
 
 Here there are 5 basic functions:
 
