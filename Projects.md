@@ -86,7 +86,7 @@
   
   * The final tab exhibits any issues opened within the project, detailing their attributes and status. These issues can be sorted based on a variety of criteria in dropdown menus in the pane.
   
-  ![Project Issues Tab](https://raw.githubusercontent.com/WillStanding/cosycat-wiki/a7d020ebb2b8e9b15cbf2c83efd8dc72b0d63885/Project%20Queries%20Tab.png "Issues Tab")
+  ![Project Issues Tab](https://github.com/WillStanding/cosycat-wiki/blob/master/Project%20Issues%20Tab.png?raw=true "Issues Tab")
   
   
   
