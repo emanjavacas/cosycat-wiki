@@ -22,11 +22,11 @@ Before you can run the app executable you need to make sure the following extern
 
 1. MongoDB
 
-    Perhaps the most important dependency is the MongoDB database. The official online documentation has a nice section on how to install MongoDB in different OSs. Once you have a working installation of MongoDB, make sure it is running before deploying Cosycat. Most conveniently, you can run the MongoDB process in the background as a daemon (see Start mongod as a Daemon for instructions). The mongod process will listen on specific TCP port, which defaults to 27017 but can be changed to any other value using the ```--port``` optional argument.
+    Perhaps the most important dependency is the MongoDB database. The [official online documentation](https://docs.mongodb.com/manual/installation/) has a nice section on how to install MongoDB in different OSs. Once you have a working installation of MongoDB, make sure it is running before deploying Cosycat. Most conveniently, you can run the MongoDB process in the background as a daemon (see Start mongod as a Daemon for instructions). The mongod process will listen on specific TCP port, which defaults to 27017 but can be changed to any other value using the ```--port``` optional argument.
 
 2. Corpus Query Engines
 
-    In order to provide Cosycat with search capabilities you to point it to a server running an instance of a corpus query engine. Cosycat relies on HTTP to access corpus resources through a corpus query engine. Which means that your corpus query engine has to be deployable as a server application and has to know how to provide results on response to HTTP GET requests. In some cases - such as BlackLab -, a server implementation is already provided (see here). For the rest, it is normally easy to wrap a query engine in a HTTP server provided the engine can be interacted with from a powerful enough programming language. For instance, an example of a       very simple server wrapper for the CQP engine can be found here (note, however, that it is still very alpha).
+    In order to provide Cosycat with search capabilities you to point it to a server running an instance of a corpus query engine. Cosycat relies on HTTP to access corpus resources through a corpus query engine. Which means that your corpus query engine has to be deployable as a server application and has to know how to provide results on response to HTTP GET requests. In some cases - such as BlackLab -, a server implementation is already provided (see [here](http://inl.github.io/BlackLab/blacklab-server-overview.html)). For the rest, it is normally easy to wrap a query engine in a HTTP server provided the engine can be interacted with from a powerful enough programming language. For instance, an example of a very simple server wrapper for the CQP engine can be found [here]() (note, however, that it is still very alpha).
 
     As of Cosycat's current version, only the BlackLab server is supported. However adding support for other query engines is trivial and we will happily offer help or, perhaps, implement it ourselves if you let us know about the details (by, for instance, opening an issue to this repository). See further down for documentation on how to implement support for a new query engine.
 
@@ -49,6 +49,27 @@ such as the following
  :session-expires 900                               ;in minutes
  :corpora [... see below ...]}
 ```
+
+#### Tagsets
+
+When doing annotations, it is common to predefine a set of annotation keys and values that
+have to be used for a given research question. For instance, if you want to annotate parts
+of speech (POS), you want to make sure the research team follows the same standard, such as
+the Penn Treebank tagset, or similar.
+
+Furthermore, knowing the tagset allows the application to provide you with autocomplete
+functionalities - as shown in the picture below -, which can save your team a lot of typing time.
+
+<p align="center"><img src="https://github.com/emanjavacas/cosycat/raw/master/doc/img/autocomplete.png" width="450px"></p>
+		
+Cosycat allows you to input different tagsets using a simple tagset format.
+See the following
+[JSON file](https://github.com/emanjavacas/cosycat/tree/master/resources/public/tagsets/pennTreebank.json)
+for an example.
+You can specify as many JSON tagset files as you want.
+In order for Cosycat to use the tagsets, you only need to add directories with
+tagsets to your config file (`:tagset-paths ["/dir/with/tagsets" "another/path"]`).
+
 
 #### Corpus configuration
 
@@ -80,26 +101,6 @@ There are several formats for specifying corpora.
   :args {:corpora ["brown-tei"]}}]
 ```
 
-#### Tagsets
-
-When doing annotations, it is common to predefine a set of annotation keys and values that
-have to be used for a given research question. For instance, if you want to annotate parts
-of speech (POS), you want to make sure the research team follows the same standard, such as
-the Penn Treebank tagset, or similar.
-
-Furthermore, knowing the tagset allows the application to provide you with autocomplete
-functionalities - as shown in the picture below -, which can save your team a lot of typing time.
-
-<p align="center"><img src="https://github.com/emanjavacas/cosycat/raw/master/doc/img/autocomplete.png" width="450px"></p>
-		
-Cosycat allows you to input different tagsets using a simple tagset format.
-See the following
-[JSON file](https://github.com/emanjavacas/cosycat/tree/master/resources/public/tagsets/pennTreebank.json)
-for an example.
-You can specify as many JSON tagset files as you want.
-In order for Cosycat to use the tagsets, you only need to add directories with
-tagsets to your config file (see above).
-
 ## **Running the app**
 
 Once you have resolved the dependencies and created your configuration file you only need to grab
@@ -128,12 +129,10 @@ the application from the release page.
 > ```
     
 > This last command will download all dependencies and build the executable jar into
-> `cosycat/target/cosycat-VERSION-standalone.jar`, which you can use to run the app.
-
-In order to start the application, you only need the following command.
+> `cosycat/target/cosycat-VERSION-standalone.jar`. After moving `cosycat-VERSION-standalone.jar` out of the CosyCat folder (to another directory, any directory, which is **not** the CosyCat directory), it can be used to run the app. In order to start the application, you only need the following command:
 
 ```sh
-java -Dconfig="path/to/config.edn" -jar cleebo-VERSION.jar start
+java -Dconfig="path/to/config.edn" -jar cosycat-VERSION-standalone.jar start
 ```
 
 Afterwards you should be able to navigate through your browser to your server's URL plus
